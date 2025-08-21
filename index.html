@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="icon" href="icon-192.png">
-    <meta name="theme-color" content="#2563eb">
-    <script>
-        // Register Service Worker for PWA functionality.
-        // This makes the app installable and capable of working offline.
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("./sw.js")
-                    .then(() => console.log("Service Worker registered!"));
-            });
-        }
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KPD Treatment Timer</title>
@@ -83,7 +69,7 @@
         /*************************
          * Utility Helpers
          *************************/
-        const APP_VERSION = '2.0.0';
+        const APP_VERSION = '2.1.0';
         const DEFAULT_PHASES = ["Warming", "Filling", "Dwell", "Draining"];
         const DEFAULT_DURATIONS = {
             Warming: 900,   // 15 minutes
